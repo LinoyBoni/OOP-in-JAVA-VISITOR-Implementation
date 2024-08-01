@@ -1,0 +1,17 @@
+public class PaperElementFactory {
+    public PaperElement createPaper(String code) {
+
+        if (code.equalsIgnoreCase("tb")) {
+            return new Table();
+        } else if (code.equalsIgnoreCase("eq")) {
+            return new Equation();
+        } else if (code.equalsIgnoreCase("d")) {
+            return new Diagram();
+        } else if (code.equalsIgnoreCase("nt")) {
+            return new Note();
+        } else {
+            return  null;
+        }
+
+    }
+}

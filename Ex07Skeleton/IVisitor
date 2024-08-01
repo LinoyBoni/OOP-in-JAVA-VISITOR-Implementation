@@ -1,0 +1,9 @@
+public interface IVisitor {
+    void visitor(Kid kid);
+    void visitor(Flag flag);
+    void visitor(Lake lake);
+    void visitor(Kite kite) ;
+    void visitor(Boat boat);
+    void visitor(Tree tree);
+    void visitor(Island island);
+}

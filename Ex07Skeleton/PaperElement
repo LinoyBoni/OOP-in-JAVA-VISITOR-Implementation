@@ -1,0 +1,7 @@
+public abstract class PaperElement implements Paper{
+    Paper paper;
+
+    public void setPaper(Paper paper){
+        this.paper = paper;
+    }
+}

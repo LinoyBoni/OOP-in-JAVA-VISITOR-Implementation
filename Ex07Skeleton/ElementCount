@@ -1,0 +1,44 @@
+public class ElementsCount implements IVisitor{
+    private static int counterElement = 0;
+
+    public static int getCounterElement(){
+        int tem = counterElement;
+        counterElement = 0;
+        return tem;
+    }
+    @Override
+    public void visitor(Kid kid)
+    {
+        counterElement++;
+    }
+    @Override
+    public void visitor(Boat boat)
+    {
+        counterElement++;
+    }
+    @Override
+    public void visitor(Tree tree)
+    {
+        counterElement++;
+    }
+    @Override
+    public void visitor(Island island)
+    {
+        counterElement++;
+    }
+    @Override
+    public void visitor(Flag flag)
+    {
+        counterElement++;
+    }
+    @Override
+    public void visitor(Lake lake)
+    {
+        counterElement++;
+    }
+    @Override
+    public void visitor(Kite kite)
+    {
+        counterElement++;
+    }
+}
